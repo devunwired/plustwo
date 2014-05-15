@@ -8,3 +8,7 @@ PRODUCT_MODEL := PlusTwo Android Device
 
 # Enable overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+
+# Copy custom boot animation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip

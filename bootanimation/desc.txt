@@ -1,0 +1,4 @@
+250 170 15
+p 3 0 part0
+p 1 0 part1
+p 0 0 part2
