@@ -4,4 +4,8 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">3</integer>
 
+    <!-- Whether a software navigation bar should be shown. This can still be
+        overridden by the qemu.hw.mainkeys system property. -->
+    <bool name="config_showNavigationBar">false</bool>
+
 </resources>
