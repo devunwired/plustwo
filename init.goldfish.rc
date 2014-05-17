@@ -98,3 +98,7 @@ service goldfish-logcat /system/bin/logcat -Q
 service fuse_sdcard /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard /storage/sdcard
     class late_start
     disabled
+    
+service sysinfo /system/bin/sysinfo
+    class main
+    socket sysinfo stream 600 system system
