@@ -1,14 +1,16 @@
 package com.doubleencore.sysinfo.client;
 
-import com.doubleencore.services.sysinfo.SysInfoManager;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+
+import com.doubleencore.services.sysinfo.SysInfoManager;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 	private TextView mTextView;
+	private RadioGroup mOptions;
 	
 	private SysInfoManager mManager;
 	
@@ -17,6 +19,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         mTextView = (TextView) findViewById(R.id.text_output);
+        mOptions = (RadioGroup) findViewById(R.id.options);
         findViewById(R.id.btn_read).setOnClickListener(this);
         
         mManager = SysInfoManager.getInstance(this);
@@ -25,7 +28,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
     	String result = "";
-    	switch (v.getId()) {
+    	switch (mOptions.getCheckedRadioButtonId()) {
 		case R.id.option_cpu:
 			result = mManager.readCpuInfo();
 			break;

@@ -12,16 +12,19 @@
             android:id="@+id/option_cpu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/read_cpu"/>
         <RadioButton 
             android:id="@+id/option_mem"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/read_mem"/>
         <RadioButton 
             android:id="@+id/option_cmdline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/read_cmdline"/>
     </RadioGroup>
     <Button
