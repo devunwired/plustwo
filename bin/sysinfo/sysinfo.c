@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
        
@@ -6,6 +8,7 @@
 
 #define SOCKET_PATH "sysinfo"
 #define INFO_PATH "/proc/cpuinfo"
+#define CMD_PATH "/proc/cmdline"
 
 #define BUFFER_MAX 1024 /* buffer for input commands */
 #define REPLY_MAX 1024
@@ -64,16 +67,32 @@ static int execute(int s, char cmd[BUFFER_MAX])
 
     //Check which command was received
     if (!strcmp("cpu", cmd)) {
-        //TODO: Read cpuinfo and return in reply.
-        ALOGI("Reading CPU Info...done!");
+        FILE *f = fopen(INFO_PATH, "rb");
+
+        count = fread(reply, 1, REPLY_MAX, f);
+        fclose(f);
+
+        reply[count] = 0;
+        
+        goto done;
+    }
+    if (!strcmp("cmdline", cmd)) {
+        FILE *f = fopen(CMD_PATH, "rb");
+
+        count = fread(reply, 1, REPLY_MAX, f);
+        fclose(f);
+
+        reply[count] = 0;
+
         goto done;
     }
 
     ALOGE("unsupported command '%s'\n", cmd);
 
 done:
+    ALOGI("Read %d bytes\n", count);
     if (reply[0]) {
-        n = snprintf(cmd, BUFFER_MAX, "%d %s", ret, reply);
+        n = snprintf(cmd, BUFFER_MAX, "%s", reply);
     } else {
         n = snprintf(cmd, BUFFER_MAX, "%d", ret);
     }

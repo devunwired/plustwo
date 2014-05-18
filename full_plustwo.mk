@@ -22,5 +22,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.lockscreen.disable.default=true
     
 PRODUCT_PACKAGES += EncoreLauncher \
+    SysInfoService \
     sysinfo
 
