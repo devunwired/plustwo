@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TestActivity</string>
-    <string name="btn_read_cpu">Read CPU Info</string>
-    <string name="btn_read_cmdline">Read Kernel Commandline</string>
+    <string name="app_name">SysInfoService</string>
 </resources>

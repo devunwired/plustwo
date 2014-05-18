@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/options"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/option_cpu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/read_cpu"/>
+        <RadioButton 
+            android:id="@+id/option_mem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/read_mem"/>
+        <RadioButton 
+            android:id="@+id/option_cmdline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/read_cmdline"/>
+    </RadioGroup>
+    <Button
+    	android:id="@+id/btn_read"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_read" />
+   	<TextView
+		android:id="@+id/text_output"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" />
+</LinearLayout>
+

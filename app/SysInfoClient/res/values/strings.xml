@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SysInfo Client</string>
+    <string name="read_cpu">CPU Info</string>
+    <string name="read_mem">Mem Info</string>
+    <string name="read_cmdline">Kernel Commandline</string>
+    <string name="btn_read">Read Data</string>
+</resources>
