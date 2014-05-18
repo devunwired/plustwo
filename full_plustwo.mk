@@ -26,5 +26,6 @@ PRODUCT_PACKAGES += \
 	com.doubleencore.services.sysinfo \
 	com.doubleencore.services.sysinfo.xml \
     SysInfoService \
+    SysInfoClient \
     sysinfo
 
