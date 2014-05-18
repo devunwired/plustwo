@@ -7,7 +7,8 @@
 #include <cutils/log.h>
 
 #define SOCKET_PATH "sysinfo"
-#define INFO_PATH "/proc/cpuinfo"
+#define CPU_PATH "/proc/cpuinfo"
+#define MEM_PATH "/proc/meminfo"
 #define CMD_PATH "/proc/cmdline"
 
 #define BUFFER_MAX 1024 /* buffer for input commands */
@@ -67,13 +68,23 @@ static int execute(int s, char cmd[BUFFER_MAX])
 
     //Check which command was received
     if (!strcmp("cpu", cmd)) {
-        FILE *f = fopen(INFO_PATH, "rb");
+        FILE *f = fopen(CPU_PATH, "rb");
 
         count = fread(reply, 1, REPLY_MAX, f);
         fclose(f);
 
         reply[count] = 0;
         
+        goto done;
+    }
+    if (!strcmp("memory", cmd)) {
+        FILE *f = fopen(MEM_PATH, "rb");
+
+        count = fread(reply, 1, REPLY_MAX, f);
+        fclose(f);
+
+        reply[count] = 0;
+
         goto done;
     }
     if (!strcmp("cmdline", cmd)) {

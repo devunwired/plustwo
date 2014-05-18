@@ -6,6 +6,9 @@
         android:persistent="true"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher">
+        
+        <uses-library android:name="com.doubleencore.services.sysinfo" />
+        
         <activity android:name=".TestActivity"
                   android:label="@string/app_name">
             <intent-filter>

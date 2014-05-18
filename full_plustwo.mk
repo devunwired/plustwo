@@ -21,7 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.lockscreen.disable.default=true
     
-PRODUCT_PACKAGES += EncoreLauncher \
+PRODUCT_PACKAGES += \
+	EncoreLauncher \
+	com.doubleencore.services.sysinfo \
+	com.doubleencore.services.sysinfo.xml \
     SysInfoService \
     sysinfo
 

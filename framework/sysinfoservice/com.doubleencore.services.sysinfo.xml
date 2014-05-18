@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <library name="com.doubleencore.services.sysinfo"
+    file="/system/framework/com.doubleencore.services.sysinfo.jar"/>
+</permissions>

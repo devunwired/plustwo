@@ -164,6 +164,10 @@ public class SysInfoReader {
     	return execute("cpu");
     }
     
+    public String readMemInfo() {
+    	return execute("memory");
+    }
+    
     public String readCommandline() {
     	return execute("cmdline");
     }
