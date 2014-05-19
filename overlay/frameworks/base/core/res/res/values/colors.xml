@@ -1,0 +1,25 @@
+<resources>
+	<add-resource type="color" name="bright_foreground_plustwo_dark"></add-resource>
+	<color name="bright_foreground_plustwo_dark">#ff00f300</color>
+
+	<add-resource type="color" name="bright_foreground_disabled_plustwo_dark"></add-resource>
+	<color name="bright_foreground_disabled_plustwo_dark">#ff4c4c4c</color>
+	
+	<add-resource type="color" name="dim_foreground_plustwo_dark"></add-resource>
+	<color name="dim_foreground_plustwo_dark">#ff00be00</color>
+	
+	<add-resource type="color" name="dim_foreground_disabled_plustwo_dark"></add-resource>
+	<color name="dim_foreground_disabled_plustwo_dark">#80bebebe</color>
+
+	<add-resource type="color" name="bright_foreground_plustwo_light"></add-resource>
+	<color name="bright_foreground_plustwo_light">#ff003200</color>
+	
+	<add-resource type="color" name="bright_foreground_disabled_plustwo_light"></add-resource>
+	<color name="bright_foreground_disabled_plustwo_light">#ffb2b2b2</color>
+	
+	<add-resource type="color" name="dim_foreground_plustwo_light"></add-resource>
+	<color name="dim_foreground_plustwo_light">#ff006400</color>
+	
+	<add-resource type="color" name="dim_foreground_disabled_plustwo_light"></add-resource>
+	<color name="dim_foreground_disabled_plustwo_light">#80323232</color>
+</resources>

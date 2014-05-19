@@ -1,0 +1,10 @@
+<resources>
+	<!-- Add PlusTwo flavor to the DeviceDefault styles -->
+    <style name="Theme.DeviceDefault" parent="Theme.Holo">
+    	<item name="android:windowBackground">@android:drawable/plustwo_background</item>
+    	<item name="textColorPrimary">@android:color/primary_text_plustwo_dark</item>
+        <item name="textColorSecondary">@android:color/secondary_text_plustwo_dark</item>
+        <item name="textColorPrimaryInverse">@android:color/primary_text_plustwo_light</item>
+        <item name="textColorSecondaryInverse">@android:color/secondary_text_plustwo_light</item>
+    </style>
+</resources>

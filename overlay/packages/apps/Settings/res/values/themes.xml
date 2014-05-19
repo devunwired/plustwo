@@ -1,0 +1,5 @@
+<resources>
+	<!-- Re-parent Settings to the DeviceDefault theme -->
+	<style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault">        
+    </style>
+</resources>
