@@ -1,0 +1,4 @@
+<resources>
+	<style name="MmsHoloTheme" parent="@android:style/Theme.DeviceDefault.Light">
+    </style>
+</resources>

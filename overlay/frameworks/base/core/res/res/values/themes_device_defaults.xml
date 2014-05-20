@@ -7,4 +7,12 @@
         <item name="textColorPrimaryInverse">@android:color/primary_text_plustwo_light</item>
         <item name="textColorSecondaryInverse">@android:color/secondary_text_plustwo_light</item>
     </style>
+
+    <style name="Theme.DeviceDefault.Light" parent="Theme.Holo.Light">
+    	<item name="android:windowBackground">@android:drawable/plustwo_background_light</item>
+    	<item name="textColorPrimary">@android:color/primary_text_plustwo_light</item>
+        <item name="textColorSecondary">@android:color/secondary_text_plustwo_light</item>
+        <item name="textColorPrimaryInverse">@android:color/primary_text_plustwo_dark</item>
+        <item name="textColorSecondaryInverse">@android:color/secondary_text_plustwo_dark</item>
+    </style>
 </resources>
